@@ -18,9 +18,6 @@ class ViewController: UIViewController
     @IBOutlet weak var goBtn: UIButton!
     @IBOutlet weak var stopBtn: UIButton!
     
-    var score: Int = 0
-    var highScore: Int = 0
-    
     var cont = true
     
     var red1: CGFloat = CGFloat(arc4random_uniform(256))
