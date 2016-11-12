@@ -46,7 +46,7 @@ class ViewController: UIViewController
         stopBtn.layer.borderColor = UIColor.white.cgColor
         stopBtn.layer.cornerRadius = 10
         
-        timer = Timer.scheduledTimer(timeInterval: 0.0001, target: self, selector: #selector(movement), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(movement), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning()
@@ -77,29 +77,29 @@ class ViewController: UIViewController
         
         if(redBool)
         {
-            red2 = r1 + 0.1*CGFloat(arc4random_uniform(8))
+            red2 = r1 + 0.01*CGFloat(arc4random_uniform(8))
         }
         else
         {
-            red2 = r1 - 0.1*CGFloat(arc4random_uniform(8))
+            red2 = r1 - 0.01*CGFloat(arc4random_uniform(8))
         }
         
         if(greenBool)
         {
-            green2 = g1 + 0.1*CGFloat(arc4random_uniform(8))
+            green2 = g1 + 0.01*CGFloat(arc4random_uniform(8))
         }
         else
         {
-            green2 = g1 - 0.1*CGFloat(arc4random_uniform(8))
+            green2 = g1 - 0.01*CGFloat(arc4random_uniform(8))
         }
         
         if(blueBool)
         {
-            blue2 = b1 + 0.1*CGFloat(arc4random_uniform(8))
+            blue2 = b1 + 0.01*CGFloat(arc4random_uniform(8))
         }
         else
         {
-            blue2 = b1 - 0.1*CGFloat(arc4random_uniform(8))
+            blue2 = b1 - 0.01*CGFloat(arc4random_uniform(8))
         }
         
         
